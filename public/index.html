@@ -4,75 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
     <link rel="stylesheet" href="index.css">
   </head>
-  <style>
-    /* @keyframes animation {
-      0% {background-image: radial-gradient(#ff0000, #ffffff, #2f00ff, #e5ff00)}
-      25% {background-image: radial-gradient(#ffffff, #2f00ff, #e5ff00, #ff0000)}
-      50% {background-image: radial-gradient(#2f00ff, #e5ff00, #ff0000, #ffffff)}
-      100% {background-image: radial-gradient(#e5ff00, #ff0000, #ffffff, #2f00ff)}
-    }
-    hr-style {
-      animation-name: animation;
-      background-repeat: repeat-x;
-      animation: hr 1s linear infinite;
-    } */
-  </style>
   <center>
   <body>
-    <div class="name">
-    <h1>David Harrison Calderwood</h1>
-  </div>
-    <div id="img">
-      <img class ="thumbnail" src="Waterski.jpg" alt="Waterski">
-    </div>
-    <h3>(503)858-5790</h3>
-    <h3>davidhcalderwood@gmail.com</h3><br/>
-  </center>
-    <hr class="hr-style"><br/>
-    <div class="container">
-        <div class="column-left">
-            <p><center><h3>Summary</h3></center>Graduated from Sunset High School in Portland, Oregon in 2014. Moved to Utah to attend Utah Valley University that year. Left UVU in 2018. Began Helio Training in September of 2018. </p>
-        </div>
-        <div class="column-center">
-            <p></p>
-        </div>
-        <div class="column-right">
-            <p>
-              <ul>
-                <center><h3>Hobbies and Achievements</h3></center>
-                <li>Eagle Scout with an Eagle Palm</li>
-                <li>Wakeboarding/Waterskiing/Surfing</li>
-                <li>Reading (Fantasy, Adventure, Mystery, Sci. Fi.)</li>
-                <li></li>
-              </ul>
-            </p>
-        </div><br/>
-        <div class="bottom-middle">
-          <p><h3>Bucket List</h3>
-            <ol>
-              <li>Travel to New Zealand and visit Hobbiton along with the other locations they filmed The Lord of the Rings.</li>
-              <li></li>
-            </ol>
-          </p>
-        </div>
-    </div>
+      <aside class="profile-card">
+      <script src="./index.js"></script>
+      <header>
+        <!-- here’s the avatar -->
+        <a target="_blank" href="#">
+          <img src="Waterski.jpg" class="hoverZoomLink">
+        </a>
+    
+        <!-- the name header -->
+        <h1>
+                Dave Calderwood
+              </h1>
+    
+        <!-- email or other info I want to use -->
+        <h2>
+                davidhcalderwood@gmail.com
+              </h2>
+    
+      </header>
+    
+      <!-- bit of a bio -->
+      <div class="profile-bio">
+    
+        <p>
+          This guy is awesome, or maybe not, you tell me. 
+        </p>
+    
+      </div>
+    </aside>
   </body>
 </html>
